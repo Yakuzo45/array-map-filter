@@ -13,7 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^23.6.0",
-    "jest-check-cross-reporter": "^0.1.0"
+    "jest-check-cross-reporter": "^0.1.0",
+    "jshint": "^2.9.6"
   },
   "jest": {
     "reporters": [

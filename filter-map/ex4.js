@@ -64,6 +64,18 @@ En prenant les deux exemples d'arguments d'entrée, on obtiendrait ceci en sorti
 */
 
 function getActivitiesMembers(activities, persons) {
+    const map1 = activities.map(function(activity) {
+        let object = new Object()
+        object.activity = activity
+        object.persons = []
+        persons.forEach(function(person) {
+            if (person.activities.includes(activity)) {
+                object.persons.push(person.name)
+            }
+        })
+        return object
+    })
+    return map1
 }
 
 

@@ -24,6 +24,8 @@ Sortie attendue:
  */
 
 function keepStarks(names) {
+  const filter1 = names.filter(name => name.includes('Stark'))
+  return filter1
 }
 
 // Ne pas modifier l'export
